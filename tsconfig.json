@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "strict": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "noImplicitThis": true,
+    "noImplicitReturns": true,
+    "noImplicitOverride": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "declaration": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "outDir": "./dist",
+    "allowJs": false,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
+    "paths": {
+      "*": ["node_modules", "./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["dist", "node_modules"],
+  "ts-node": {
+    "compilerOptions": {
+      "module": "CommonJS"
+    }
+  }
+}
